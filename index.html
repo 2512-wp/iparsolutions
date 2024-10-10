@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio en Desarrollo</title>
+    <title>IPAR</title>
     <style>
         body {
             display: flex;
@@ -26,10 +26,11 @@
 
         .message {
             max-width: 600px;
+            padding: 20px;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
             animation: pulse 1.5s infinite;
         }
@@ -41,7 +42,7 @@
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 10px;
         }
 
@@ -56,14 +57,70 @@
         }
 
         .cta {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-top: 20px;
             animation: fadeIn 3s infinite;
         }
-
-        @keyframes fadeIn {
+ 
+	@keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .emoji {
+                font-size: 1.8rem;
+            }
+
+            .cta {
+                font-size: 1rem;
+            }
+
+            .contact-info {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            .emoji {
+                font-size: 1.6rem;
+            }
+
+            .cta {
+                font-size: 0.9rem;
+            }
+
+            .contact-info {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -73,6 +130,11 @@
         <p>La web estará disponible muy pronto. 🌐</p>
         <p class="emoji">⏳ ⛏️ 👷‍♂️</p>
         <p class="cta">¡Gracias por tu paciencia! 🙌</p>
+
+        <div class="contact-info">
+            <p>Si necesitas contactarnos, por favor llama al: <a href="tel:+50240276405">+502 4027-6405</a></p>
+            <p>O escríbenos a: <a href="mailto:info@iparsolutions.com">info@iparsolutions.com</a></p>
+        </div>
     </div>
 </body>
 </html>
